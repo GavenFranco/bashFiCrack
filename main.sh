@@ -21,7 +21,7 @@ menu() {
  / /_/ / /_/ (__  ) / / / __/ / / /___/ /  / /_/ / /__/ ,<   
 /_____/\__,_/____/_/ /_/_/   /_/\____/_/   \__,_/\___/_/|_|
 
-"
+ "
 echo " ============Welcome to BashFiCrack============ "
 echo " 1). Set Interface to Monitor mode."
 echo " 2). Scan for networks."
