@@ -5,12 +5,17 @@
 
 
 checkRoot() {
-  if ($EUID == )
+  if [[$EUID -ne 0 ]]; then
+    echo "Please run this script as root"
+    exit 1
+  fi
 }
 
-
-
-
+dep() {
+  echo "Installing required software"
+  apt update && apt upgrade
+  apt-get install airmon-ng aircrack-ng
+}
 #Menu Function
 menu() {
   clear
@@ -32,6 +37,6 @@ case $choice in
 }
 # Menu Loop
 while true; do 
-  menu()
+  menu
 done
 
