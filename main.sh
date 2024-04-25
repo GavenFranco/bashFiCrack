@@ -3,6 +3,15 @@
 ## Disclaimer I am Not responsible for your actions. Please don't be stupid with this tool.
 ## Wifi Cracker writen in bash.
 
+
+checkRoot() {
+  if ($EUID == )
+}
+
+
+
+
+#Menu Function
 menu() {
   clear
   echo"  
@@ -21,4 +30,8 @@ read -p "Enter your choice (1/2/3..): " choice
 
 case $choice in
 }
+# Menu Loop
+while true; do 
+  menu
+done
 
