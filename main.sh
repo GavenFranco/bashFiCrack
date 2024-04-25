@@ -32,6 +32,6 @@ case $choice in
 }
 # Menu Loop
 while true; do 
-  menu
+  menu()
 done
 
