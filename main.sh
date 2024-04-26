@@ -12,10 +12,12 @@ checkRoot() {
 }
 
 dep() {
-  echo "Installing required software"
-  apt update && apt upgrade
-  apt-get install airmon-ng aircrack-ng
+ if ! command -v aircrack-ng &> /dev/null; then
+   echo "Aircrack-ng is not installed. Please intstall it using: sudo apt-get install aircrack-ng:"
+   exit 1
+ fi
 }
+
 #Menu Function
 menu() {
   clear
@@ -35,7 +37,10 @@ read -p "Enter your choice (1/2/3..): " choice
 
 case $choice in
 }
-# Menu Loop
+
+#Menu
+checkRoot
+dep
 while true; do 
   menu
 done
