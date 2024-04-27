@@ -3,7 +3,6 @@
 ## Disclaimer I am Not responsible for your actions. Please don't be stupid with this tool.
 ## Wifi Cracker writen in bash.
 
-
 checkRoot() {
   if [[$EUID -ne 0 ]]; then
     echo "Please run this script as root"
