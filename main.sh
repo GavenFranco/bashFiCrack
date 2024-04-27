@@ -17,6 +17,10 @@ dep() {
  fi
 }
 
+setmonitor() {
+  read -p "Please enter the interface you would like to use (e.g. wlan0)" interface
+}
+
 #Menu Function
 menu() {
   clear
